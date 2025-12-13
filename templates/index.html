@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TODOリスト</title>
+</head>
+<body>
+    <h1>みんなの TODO リスト</h1>
+    {% for task in tasks %}
+        <p>{{ task }}</p>
+    {% else %}
+        <p>タスクはまだありません。</p>
+    {% endfor %}
+
+    </body>
+</html>
